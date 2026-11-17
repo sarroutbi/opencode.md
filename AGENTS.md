@@ -9,6 +9,7 @@
 - Do not include issue or PR numbers (e.g. `(#40)`) in commit messages.
   GitHub appends these automatically when a PR is merged.
 - Never push changes unless explicitly asked.
+- When there is code that has been vibe coded, add the corresponding Co-Authored-By
 
 ## Programming
 
@@ -16,6 +17,8 @@
 - Use the standard tooling for each language (pylint, cargo fmt, etc.).
 - Keep mocks in sync with production code changes.
 - Update README.md or AGENTS.md when changes require it.
+- When there is code that has been vibe coded, add the corresponding Co-Authored-By
+header when committing
 
 ## Repository scope
 
