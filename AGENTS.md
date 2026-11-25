@@ -29,3 +29,17 @@ header when committing
 
 - Before writing new code or building a feature, load the `clean-code-builder` skill.
 - Before refactoring existing code, load the `fowler-beck-refactoring` skill.
+
+## Cross-repo task prompts
+
+When handing work for another repository to an agent or session (e.g.,
+frontend tasks driven from a backend session), structure the prompt as:
+
+- `[Persona]` — role and standards of the executing engineer
+- `[Context]` — current state of the target code plus any contract it must
+  match; keep contract blocks reusable across related prompts
+- `[Task]` — the concrete, numbered changes
+- `[Constraints]` — boundaries, conventions, and what not to touch
+- `[Format/Deliverables]` — expected output: for repo-editing agents,
+  working-tree changes plus verification commands; for chat answers, the
+  response shape
